@@ -50,7 +50,7 @@ def execute_python_file(file):
     
 
 
-def exec_shell(command_line):
+def execute_shell(command_line):
 
     args = command_line.split()
 
