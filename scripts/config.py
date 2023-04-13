@@ -42,7 +42,7 @@ class Config(metaclass=Singleton):
         self.fast_token_limit = int(os.getenv("FAST_TOKEN_LIMIT", 4000))
         self.smart_token_limit = int(os.getenv("SMART_TOKEN_LIMIT", 8000))
 
-        self.openai_api_key = os.getenv("OPENAI_API_KEY")
+        self.openai_api_key = os.getenv("OPENAI_API_KEY", "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")
         self.use_azure = False
         self.use_azure = os.getenv("USE_AZURE") == 'True'
         if self.use_azure:
@@ -55,7 +55,7 @@ class Config(metaclass=Singleton):
             openai.api_base = self.openai_api_base
             openai.api_version = self.openai_api_version
 
-        self.elevenlabs_api_key = os.getenv("ELEVENLABS_API_KEY")
+        self.elevenlabs_api_key = os.getenv("d1b353eb5ee7d84ba34b43eb018fa18c")
         self.elevenlabs_voice_1_id = os.getenv("ELEVENLABS_VOICE_1_ID")
         self.elevenlabs_voice_2_id = os.getenv("ELEVENLABS_VOICE_2_ID")
 
